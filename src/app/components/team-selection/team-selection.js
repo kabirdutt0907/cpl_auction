@@ -105,15 +105,15 @@ class TeamSelection extends Component {
                     <Col xs={12} md={6} lg={6} className={local.searchContainer}>
                         <div>
                             <div className={local.searchContainer_info}>
-                                <h3>AGC Auction Central</h3>
-                                <p>Decide which clubs compete in your tournament.<br />Search and select clubs you want to participate. Select/deselect based on your choice.</p>
+                                <h3>CPL Auction</h3>
+                                <p>Decide teams to participate in the League</p>
                             </div>
 
                             <input
                                 type="text"
                                 className={local.searchContainer_search}
                                 onChange={(e) => this.getSearchValue(e)}
-                                placeholder="Search club..."
+                                placeholder="Search Teams..."
                             />
                             <div className={local.searchContainer_clublist}>
                                 {(this.props.clubs.length === 0) ? <p className={local.searchNotFoundText}>No clubs match the criteria</p> : this.props.clubs.map((club, index) => this.renderClubSelect(club, index))}
@@ -123,8 +123,8 @@ class TeamSelection extends Component {
                     <Col xs={12} md={6} lg={6} className={local.selectedDivision}>
                         <div className={local.selectedContainer}>
                             <div className={local.selectedContainer_info}>
-                                <h3>Selected Clubs</h3>
-                                <p>The clubs selected can be found below</p>
+                                <h3>Selected Teams</h3>
+                                <p>The Teams selected can be found below</p>
                             </div>
 
                             <Row className={local.selectedContainer_clublist}>

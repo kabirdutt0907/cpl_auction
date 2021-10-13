@@ -98,24 +98,24 @@ class Squads extends Component {
                                 className={local.nav_icon}
                                 onClick={() => this.navigateTo('teamselect')}
                             />
-                            <img
+                            {/* <img
                                 src={List}
                                 alt="list"
                                 className={local.nav_icon}
                                 onClick={() => this.navigateTo('list')}
-                            />
+                            /> */}
                             <img
                                 src={Squad}
                                 alt="squad"
                                 className={local.nav_icon}
                                 onClick={() => this.navigateTo('squad')}
                             />
-                            <img
+                            {/* <img
                                 src={Fixtures}
                                 alt="fixture"
                                 className={local.nav_icon}
                             // onClick={() => this.navigateTo('fixture')}
-                            />
+                            /> */}
                         </div>
                     </Col>
                 </Row>
@@ -130,8 +130,8 @@ class Squads extends Component {
                             {(this.props.clubs.length === 0) ? null :
                                 <div>
                                     <p className={local.playerThumbnail_clubname}>{this.props.clubs[this.state.currentClubIndex].club}</p>
-                                    <p className={local.playerThumbnail_clubdata}>CLUB BUDGET: {this.props.clubs[this.state.currentClubIndex].clubBudget} FPS</p>
-                                    <p className={local.playerThumbnail_clubdata}>SQUAD SIZE: {this.props.clubs[this.state.currentClubIndex].players.length}</p>
+                                    <p className={local.playerThumbnail_clubdata}>TEAM BUDGET: {this.props.clubs[this.state.currentClubIndex].clubBudget} Points</p>
+                                    <p className={local.playerThumbnail_clubdata}>TEAM SIZE: {this.props.clubs[this.state.currentClubIndex].players.length}</p>
                                 </div>}
 
                             {(this.props.clubs.length === 0) ?

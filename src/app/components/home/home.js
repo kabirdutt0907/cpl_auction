@@ -211,24 +211,24 @@ class Home extends Component {
                 className={local.nav_icon}
                 onClick={() => this.navigateTo("teamselect")}
               />
-              <img
+              {/* <img
                 src={List}
                 alt="list"
                 className={local.nav_icon}
                 onClick={() => this.navigateTo("list")}
-              />
+              /> */}
               <img
                 src={Squad}
                 alt="squad"
                 className={local.nav_icon}
                 onClick={() => this.navigateTo("squad")}
               />
-              <img
+              {/* <img
                 src={Fixtures}
                 alt="fixture"
                 className={local.nav_icon}
                 onClick={() => this.navigateTo("fixture")}
-              />
+              /> */}
             </div>
           </Col>
         </Row>
